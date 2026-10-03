@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Sanandha Prakash — AI/ML and Data Science portfolio">
+<title>Sanandha Prakash | AI/ML & Data Science</title>
+<style>
+:root{--bg:#0b1020;--card:#121a2e;--text:#eef2ff;--muted:#aab4d0;--line:#26314d;--accent:#9bb0ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1080px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:5;background:rgba(11,16,32,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;padding:15px 0}.brand{font-weight:800}nav a{color:var(--muted);margin-left:18px;font-size:.94rem}nav a:hover{color:var(--text)}
+.hero{padding:100px 0 72px}.eyebrow{color:var(--accent);font-weight:700}h1{font-size:clamp(2.6rem,7vw,5.2rem);line-height:1;letter-spacing:-.055em;margin:15px 0 22px}h2{font-size:2rem;margin:0 0 12px}.hero p,.muted{color:var(--muted)}.hero p{max-width:760px;font-size:1.12rem}
+.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-block;padding:10px 16px;border:1px solid var(--line);border-radius:10px;font-weight:700}.btn.primary{background:var(--text);color:var(--bg)}
+section{padding:62px 0;border-top:1px solid var(--line)}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}.card h3{margin-top:0;font-size:1.3rem}
+.tags{display:flex;gap:7px;flex-wrap:wrap;margin:17px 0}.tag{border:1px solid var(--line);border-radius:999px;padding:4px 9px;color:var(--muted);font-size:.84rem}.metrics{display:flex;gap:25px;flex-wrap:wrap}.metric strong{display:block;font-size:1.25rem}.metric span{color:var(--muted);font-size:.9rem}
+ul{color:var(--muted);padding-left:20px}.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}footer{padding:35px 0 50px;text-align:center;color:var(--muted)}
+@media(max-width:760px){.grid,.skill-grid{grid-template-columns:1fr}.links{display:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="#">Sanandha Prakash</a><div class="links">
+<a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+</div></div></nav>
+
+<header class="hero wrap">
+<div class="eyebrow">AI/ML • NLP • Audio ML • Data Science</div>
+<h1>Building practical<br>machine learning systems.</h1>
+<p>B.Tech CSE graduate focused on AI/ML and Data Science, with hands-on experience building and deploying NLP and audio classification projects. Currently pursuing a B.S. in Data Science and Applications at IIT Madras.</p>
+<div class="buttons">
+<a class="btn primary" href="https://github.com/Sanandha1234" target="_blank">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+<a class="btn" href="https://huggingface.co/spaces/psanandha/music-genre-classifier" target="_blank">Hugging Face</a>
+<a class="btn" href="https://cdax5drf3njr8ag9ye4raq.streamlit.app/" target="_blank">Streamlit Demo</a>
+</div>
+</header>
+
+<section id="about"><div class="wrap"><h2>About</h2>
+<p class="muted">I work primarily with Python, machine learning, deep learning and NLP. My projects cover the workflow from data preprocessing and feature engineering to model evaluation and deployment. I am interested in building robust ML systems and studying generalization under noisy or distribution-shifted data.</p>
+</div></section>
+
+<section id="projects"><div class="wrap"><h2>Featured Projects</h2><div class="grid">
+<article class="card"><h3>BeatBlend — Music Genre Classification from Audio Mashups</h3>
+<p class="muted">10-class audio classification for noisy music mashups.</p>
+<div class="metrics"><div class="metric"><strong>0.94</strong><span>Validation Macro-F1</span></div><div class="metric"><strong>0.88</strong><span>Kaggle Macro-F1</span></div></div>
+<ul><li>Used instrument-separated stems with Mel-spectrogram/MFCC features.</li><li>Explored CNN, CRNN, AST, HuBERT and WavLM.</li><li>Applied noise injection, stem mixing, time stretching and SpecAugment.</li><li>Deployed an interactive Hugging Face Spaces demo.</li></ul>
+<div class="tags"><span class="tag">PyTorch</span><span class="tag">Librosa</span><span class="tag">Transformers</span><span class="tag">Audio ML</span></div>
+<div class="buttons"><a class="btn" href="https://github.com/Sanandha1234/messy-mashup-music-genre-classification" target="_blank">GitHub</a><a class="btn" href="https://huggingface.co/spaces/psanandha/music-genre-classifier" target="_blank">Live Demo</a></div>
+</article>
+
+<article class="card"><h3>TextTriage — Multiclass Comment Category Classification</h3>
+<p class="muted">NLP classification on approximately 198K user-generated comments.</p>
+<div class="metrics"><div class="metric"><strong>0.8226</strong><span>Validation Macro-F1</span></div><div class="metric"><strong>0.811</strong><span>Kaggle Score</span></div></div>
+<ul><li>Combined word/character TF-IDF with linguistic, interaction and metadata features.</li><li>Compared Logistic Regression, Linear SVC and LightGBM.</li><li>Used 5-fold cross-validation and hyperparameter tuning.</li><li>Deployed an interactive Streamlit application.</li></ul>
+<div class="tags"><span class="tag">Python</span><span class="tag">NLP</span><span class="tag">scikit-learn</span><span class="tag">LightGBM</span></div>
+<div class="buttons"><a class="btn" href="https://github.com/Sanandha1234/Comment-category-prediction" target="_blank">GitHub</a><a class="btn" href="https://cdax5drf3njr8ag9ye4raq.streamlit.app/" target="_blank">Live Demo</a></div>
+</article>
+</div></div></section>
+
+<section id="skills"><div class="wrap"><h2>Technical Skills</h2><div class="skill-grid">
+<div class="skill"><strong>Languages & Data</strong><p class="muted">Python, SQL, PostgreSQL, MongoDB, Pandas, NumPy</p></div>
+<div class="skill"><strong>ML & DL</strong><p class="muted">scikit-learn, PyTorch, LightGBM, XGBoost, Transformers</p></div>
+<div class="skill"><strong>AI Domains</strong><p class="muted">Machine Learning, Deep Learning, NLP, Audio ML, Generative AI foundations</p></div>
+<div class="skill"><strong>Deployment</strong><p class="muted">Streamlit, Flask, Docker, Linux, AWS, Git/GitHub</p></div>
+<div class="skill"><strong>ML Workflow</strong><p class="muted">Data cleaning, EDA, feature engineering, model evaluation, cross-validation</p></div>
+<div class="skill"><strong>Foundations</strong><p class="muted">Probability, statistics, linear algebra, model evaluation and Macro-F1</p></div>
+</div></div></section>
+
+<section id="education"><div class="wrap"><h2>Education</h2><div class="card">
+<h3>B.Tech in Computer Science & Engineering</h3><p class="muted">BVRIT Hyderabad • 2022–2026 • CGPA 8.24</p>
+<h3>B.S. in Data Science and Applications</h3><p class="muted">IIT Madras • 2024–Present • Currently pursuing</p>
+<p class="muted">Diploma in Data Science — completed as part of the IIT Madras program.</p>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><h2>Let's connect</h2><p class="muted">Open to AI/ML, NLP, Data Science and related internship and entry-level opportunities.</p>
+<div class="buttons"><a class="btn primary" href="mailto:sanandhaprakash0907@gmail.com">Email me</a><a class="btn" href="https://github.com/Sanandha1234" target="_blank">GitHub</a></div></div></section>
+<footer>© 2026 Sanandha Prakash</footer>
+</body></html>
